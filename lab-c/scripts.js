@@ -1,3 +1,4 @@
+// Kod wygenerowany przy użyciu Cursor AI
 "use strict";
 
 const GRID_SIZE = 4;
