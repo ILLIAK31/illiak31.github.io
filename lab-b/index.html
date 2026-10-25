@@ -9,6 +9,72 @@
     <script src="scripts.js" defer></script>
 </head>
 <body>
+<!-- Kod wygenerowany przy użyciu Cursor AI -->
+<main class="todo-container">
+    <h1>Lista TODO</h1>
+    <p class="subtitle">Lista zadań do wykonania</p>
 
+    <div class="search-section">
+        <label for="search">Wyszukaj zadanie</label>
+        <input
+            type="text"
+            id="search"
+            placeholder="Wpisz co najmniej 2 znaki..."
+            autocomplete="off"
+        >
+    </div>
+
+    <div id="taskList" class="task-list">
+
+        <div class="task">
+            <div class="task-content">
+                <span class="task-name">Zrobić zakupy</span>
+                <span class="task-date">30.11.2026, 12:00</span>
+            </div>
+            <button type="button" class="delete-btn">Usuń</button>
+        </div>
+
+        <div class="task">
+            <div class="task-content">
+                <span class="task-name">Przygotować się do egzaminu</span>
+                <span class="task-date">05.12.2026, 15:00</span>
+            </div>
+            <button type="button" class="delete-btn">Usuń</button>
+        </div>
+
+        <div class="task">
+            <div class="task-content">
+                <span class="task-name">Zrobić laboratorium AI</span>
+                <span class="task-date">10.12.2026, 18:00</span>
+            </div>
+            <button type="button" class="delete-btn">Usuń</button>
+        </div>
+
+    </div>
+
+    <form id="addForm" class="add-form">
+        <h2>Dodaj nowe zadanie</h2>
+
+        <label for="taskName">Nazwa zadania</label>
+        <input
+            type="text"
+            id="taskName"
+            placeholder="Wpisz nazwę zadania..."
+            maxlength="255"
+            required
+        >
+
+        <label for="taskDate">Termin wykonania (opcjonalnie)</label>
+        <input
+            type="datetime-local"
+            id="taskDate"
+        >
+
+        <button type="submit" class="add-btn">
+            Dodaj zadanie
+        </button>
+    </form>
+</main>
+<!-- End -->
 </body>
 </html>
